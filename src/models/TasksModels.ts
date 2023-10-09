@@ -34,15 +34,11 @@ class TasksModels {
 
       if (updateTask === 0) return { messageError: `Não foi possivel atualizar a tarefa!` };
 
-<<<<<<< HEAD
+
       return { updateTask };
-=======
-      const getTask = await database.table('tasks').where({ task_id: id }).select('*');
 
-      console.log(getTask);
 
-      return { getTask };
->>>>>>> 7bbd843 (Atualizando Projeto BackEnd para Deploy)
+
     } catch (e: any) {
       console.log(`Error ao tentar atualizar as Tasks!`);
     }

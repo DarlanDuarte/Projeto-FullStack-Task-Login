@@ -56,13 +56,11 @@ class TasksController {
 
       if (result?.messageError) return res.status(400).json(result.messageError);
 
-<<<<<<< HEAD
-      return res.status(200).json(`Tarefa atualizada com sucesso!`);
-=======
-      const task = result?.getTask?.map((value, index) => value.tasks);
 
-      return res.status(200).json({ msg: `Tarefa atualizada com sucesso!`, task: task });
->>>>>>> 7bbd843 (Atualizando Projeto BackEnd para Deploy)
+      return res.status(200).json(`Tarefa atualizada com sucesso!`);
+
+
+
     } catch (e: any) {
       return res.status(500).json(`Error interno do Servidor`);
     }
