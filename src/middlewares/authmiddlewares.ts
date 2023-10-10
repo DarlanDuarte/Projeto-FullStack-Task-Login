@@ -21,6 +21,7 @@ export const authmiddlewares = async (req: Request, res: Response, next: NextFun
 
     next();
   } catch (e: any) {
+    console.log(e.message);
     return res.status(500).json(`Error interno do servidor!`);
   }
 };
